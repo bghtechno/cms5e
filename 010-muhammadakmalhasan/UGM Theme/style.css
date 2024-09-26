@@ -12,10 +12,11 @@ Text Domain: ugm-theme
 /* Style untuk header */
 header {
     background-color: #002147; /* Biru tua UGM */
-padding: 20px;
+    padding: 20px;
+    text-align: center;
 }
 header img {
-height: 50px;
+height: 150px;
 }
 nav ul {
 list-style: none;
