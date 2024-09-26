@@ -10,7 +10,7 @@
 <body <?php body_class(); ?>>
 <header>
 <div class="container">
-<img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="Logo UGM">
+<img src="<?php echo get_template_directory_uri(); ?>/images/logougm.png" alt="Logo UGM">
 <nav>
 <?php wp_nav_menu(array('theme_location' => 'primary')); ?>
 </nav>
