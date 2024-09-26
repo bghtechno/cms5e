@@ -1,11 +1,7 @@
 <?php get_header(); ?>
 <main>
-<section class="hero">
-<h1>Selamat datang di Universitas Gadjah Mada</h1>
-<p>Informasi terbaru, agenda, dan berita.</p>
-</section>
-<section class="news">
-<h2>Berita Terbaru</h2>
+<h1>Arsip: <?php the_archive_title(); ?></h1>
+<div class="archive-content">
 <?php
 if ( have_posts() ) :
 while ( have_posts() ) : the_post();
@@ -18,6 +14,6 @@ while ( have_posts() ) : the_post();
 endwhile;
 endif;
 ?>
-</section>
+</div>
 </main>
 <?php get_footer(); ?>
