@@ -14,9 +14,10 @@ header {
 
     background-color: #002147; /* Biru tua UGM */
     padding: 20px;
+    text-align: center;
     }
     header img {
-    height: 50px;
+    height: 80px;
     }
     nav ul {
     list-style: none;
