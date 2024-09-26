@@ -1,27 +1,28 @@
 <?php
-function adelaide_theme_setup() {
-// Menambahkan dukungan untuk gambar fitur
-add_theme_support('post-thumbnails');
-// Mengelola title tag
-add_theme_support('title-tag');
-// Menambahkan dukungan untuk menu navigasi
+// Daftarkan menu
+function ugm_theme_setup() {
 register_nav_menus(array(
-'primary' => __('Primary Menu', 'adelaide-theme'),
+'primary' => __('Primary Menu', 'ugm-theme'),
 ));
-// Menambahkan dukungan untuk sidebar
-function adelaide_widgets_init() {
-register_sidebar(array(
-'name' => __('Main Sidebar', 'adelaide-theme'),
-'id' => 'main-sidebar',
-'description' => __('Sidebar utama di sebelah kanan.', 'adelaide-theme'),
-'before_widget' => '<div class="widget">',
-'after_widget' => '</div>',
-'before_title' => '<h3 class="widget-title">',
-'after_title' => '</h3>',
-));
-
 }
-add_action('widgets_init', 'adelaide_widgets_init');
+add_action('after_setup_theme', 'ugm_theme_setup');
+// Enqueue stylesheet
+function ugm_theme_scripts() {
+wp_enqueue_style('ugm-style', get_stylesheet_uri());
 }
-add_action('after_setup_theme', 'adelaide_theme_setup');
+add_action('wp_enqueue_scripts', 'ugm_theme_scripts');
 ?>
+<?php get_header(); ?>
+<main>
+<h1><?php the_title(); ?></h1>
+<div class="page-content">
+<?php
+if ( have_posts() ) :
+while ( have_posts() ) : the_post();
+the_content();
+endwhile;
+endif;
+?>
+</div>
+</main>
+<?php get_footer(); ?>

@@ -1,7 +1,7 @@
 <footer>
-<p>&copy; <?php echo date('Y'); ?> Universitas Trunojoyo Madura.</p>
-<p>Alamat: Jl. Telang No. 5, Kota Bangkalan, Indonesia</p>
-<p>Email: info@institusi.com | Telepon: (021) 123-4567</p>
+<p>&copy; 2024 Universitas Gadjah Mada. All rights reserved.</p>
+<p><a href="#">Tentang Kami</a> | <a href="#">Kontak</a> | <a href="#">Kebijakan
+Privasi</a></p>
 </footer>
 <?php wp_footer(); ?>
 </body>
