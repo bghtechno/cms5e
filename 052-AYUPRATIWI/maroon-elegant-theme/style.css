@@ -1,0 +1,49 @@
+/*
+Theme Name: Maroon Elegant Theme
+Theme URI: http://example.com/
+Author: Your Name
+Author URI: http://example.com/
+Description: A simple elegant WordPress theme with maroon colors
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: maroon, elegant, responsive, custom-background, custom-logo
+Text Domain: maroon-elegant-theme
+*/
+body {
+font-family: 'Arial', sans-serif;
+background-color: #f7f7f7;
+color: #333;
+}
+a {
+color: #800000; /* Maroon color */
+text-decoration: none;
+}
+a:hover {
+color: #660000;
+}
+header {
+background-color: #800000;
+color: white;
+padding: 20px;
+text-align: center;
+}
+footer {
+background-color: #660000;
+color: white;
+padding: 20px;
+text-align: center;
+}
+h1, h2, h3, h4, h5, h6 {
+color: #800000;
+}
+button, input[type="submit"] {
+background-color: #800000;
+color: white;
+border: none;
+padding: 10px 20px;
+cursor: pointer;
+}
+button:hover, input[type="submit"]:hover {
+background-color: #660000;
+}
