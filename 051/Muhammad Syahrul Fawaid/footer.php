@@ -1,8 +1,9 @@
+```php
 <footer>
-<p>&copy; 2024 Universitas Gadjah Mada. All rights reserved.</p>
-<p><a href="#">Tentang Kami</a> | <a href="#">Kontak</a> | <a href="#">Kebijakan
-Privasi</a></p>
+<p>&copy; 2024 - Your Institution Name</p>
+<p>All rights reserved.</p>
 </footer>
 <?php wp_footer(); ?>
 </body>
 </html>
+```

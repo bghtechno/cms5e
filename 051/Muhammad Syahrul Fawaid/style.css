@@ -1,43 +1,50 @@
+css
 /*
-Theme Name: UGM Theme
-Theme URI: http://yourwebsite.com
-Author: Nama Anda
-Author URI: http://yourwebsite.com
-Description: Tema WordPress mirip website Universitas Gadjah Mada
+Theme Name: Maroon Elegant Theme
+Theme URI: http://example.com/
+Author: Your Name
+Author URI: http://example.com/
+Description: A simple elegant WordPress theme with maroon colors
 Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: ugm-theme
+Tags: maroon, elegant, responsive, custom-background, custom-logo
+Text Domain: maroon-elegant-theme
 */
-/* Style untuk header */
-header {
-    background-color: #002147; /* Biru tua UGM */
-padding: 20px;
+body {
+font-family: 'Arial', sans-serif;
+background-color: #f7f7f7;
+color: #333;
 }
-header img {
-height: 50px;
-}
-nav ul {
-list-style: none;
-display: flex;
-justify-content: flex-end;
-}
-nav ul li {
-margin-left: 20px;
-}
-nav ul li a {
-color: #fff;
+a {
+color: #800000; /* Maroon color */
 text-decoration: none;
-font-weight: bold;
 }
-/* Style untuk footer */
-footer {
-background-color: #F4D03F; /* Warna emas UGM */
-color: #002147;
+a:hover {
+color: #660000;
+}
+header {
+background-color: #800000;
+color: white;
 padding: 20px;
 text-align: center;
 }
-footer a {
-color: #002147;
-text-decoration: none;
+footer {
+background-color: #660000;
+color: white;
+padding: 20px;
+text-align: center;
+}
+h1, h2, h3, h4, h5, h6 {
+color: #800000;
+}
+button, input[type="submit"] {
+background-color: #800000;
+color: white;
+border: none;
+padding: 10px 20px;
+cursor: pointer;
+}
+button:hover, input[type="submit"]:hover {
+background-color: #660000;
 }
